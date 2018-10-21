@@ -35,7 +35,11 @@ var config = {
 		},
 		{
 			module: "clock",
-			position: "top_left"
+			position: "top_left",
+			// dateFormat: "dddd, DD MMMM YYYY W"
+			displayType: "both",
+			analogSize: "200px",
+			timezone: "Australia/Brisbane"
 		},
 		{
 			module: "calendar",
@@ -89,6 +93,10 @@ var config = {
 			position: "bottom_bar",
 			config: {
 				feeds: [
+					{
+						title: "SBS World",
+						url: "http://www.sbs.com.au/news/topic/world/feed"
+					},
 					{
 						title: "New York Times",
 						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
