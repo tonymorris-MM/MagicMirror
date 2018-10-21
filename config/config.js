@@ -151,6 +151,10 @@ var config = {
           {
             title: "SBS World",
             url: "http://www.sbs.com.au/news/topic/world/feed"
+          },
+          {
+            title: "Al Jazeera",
+            url: "https://www.aljazeera.com/xml/rss/all.xml"
           }
         ],
         showDescription: true,
