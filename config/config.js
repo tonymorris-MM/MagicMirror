@@ -93,6 +93,21 @@ var config = {
       }
     },
     {
+      module: "calendar",
+      header: "Dinner",
+      position: "top_left",
+      config: {
+        maximumEntries: 8,
+        calendars: [
+          // Dinner
+          {
+            symbol: "bell",
+            url: "https://calendar.google.com/calendar/ical/eavup2gqcdgeutlrc2ejgp5sfo%40group.calendar.google.com/private-93799c2500618f9dcd7d293da2d74763/basic.ics"
+          },
+        ]
+      }
+    },
+    {
       module: "currentweather",
       position: "top_right",
       config: {
@@ -123,8 +138,8 @@ var config = {
         updateInterval: 3600000,
         showHumidity: true,
         colored: true,
-        tableClass: "large",
-        maxNumberOfDays: 5,
+        tableClass: "medium",
+        maxNumberOfDays: 6,
         showRainAmount: true
       }
     },
