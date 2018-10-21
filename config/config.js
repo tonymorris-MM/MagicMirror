@@ -36,10 +36,12 @@ var config = {
 		{
 			module: "clock",
 			position: "top_left",
-			// dateFormat: "dddd, DD MMMM YYYY W"
-			displayType: "both",
-			analogSize: "200px",
-			timezone: "Australia/Brisbane"
+			config : {
+				dateFormat: "dddd, DD MMMM YYYY W",
+				displayType: "both",
+				analogSize: "200px",
+				timezone: "Australia/Brisbane"
+			}
 		},
 		{
 			module: "calendar",
