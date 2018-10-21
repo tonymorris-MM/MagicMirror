@@ -9,13 +9,13 @@
  */
 
 var config = {
-  address: "localhost", // Address to listen on, can be:
+  address: "0.0.0.0", // Address to listen on, can be:
                         // - "localhost", "127.0.0.1", "::1" to listen on loopback interface
                         // - another specific IPv4/6 to listen on a specific interface
                         // - "", "0.0.0.0", "::" to listen on any interface
                         // Default, when address config is left out, is "localhost"
   port: 8080,
-  ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1"], // Set [] to allow all IP addresses
+  ipWhitelist: [], // Set [] to allow all IP addresses
                                                          // or add a specific IPv4 of 192.168.1.5 :
                                                          // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.5"],
                                                          // or IPv4 range of 192.168.3.0 --> 192.168.3.15 use CIDR format :
@@ -102,7 +102,12 @@ var config = {
         units: "metric",
         degreeLabel: true,
         updateInterval: 3600000,
-        showHumidity: true
+        showHumidity: true,
+        showWindDirection: true,
+        showWindspeedUnit: true,
+        useKnotswind: true,
+        useKMPHwind: false,
+        useBeaufort: false
       }
     },
     {
@@ -135,6 +140,24 @@ var config = {
         showDescription: true,
         showSourceTitle: true,
         showPublishDate: true
+      }
+    },
+    {
+      module: "MMM-PilotWX",
+      disabled: false,
+      position: "bottom_left",         // for mode: "Static",  bottom_bar for mode: "Rotating",
+      config: {
+        ICAO: "YBBN,YAMB,YBCG,YBOK,YBNA,YSTW", // list of INTL ICAO's
+        colorCode: "Standard", // Standard or Alternative
+        mode: "Static",           // Static (List) or Rotating (one by one)
+        sym: "/",                 // @ or / (Separator for Wind speed and direction)
+        tempUnits: "C",      // C or F (F converted from C)
+        measure: "KM",            // SM or KM (KM converted from SM data)
+        time: "Local",            // Zulu or Local (observation time)
+        maxWidth: "100%",         // 100% for mode: Rotating, approx 300px for mode: Static
+        useAltHeader: true,   // Use alternative header
+        useHeader: true,
+        header: "METAR",
       }
     },
   ]

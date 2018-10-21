@@ -22,8 +22,10 @@ Module.register("currentweather",{
 		showPeriodUpper: false,
 		showWindDirection: true,
 		showWindDirectionAsArrow: false,
+		showWindspeedUnit: false,
 		useBeaufort: true,
 		useKMPHwind: false,
+		useKnotswind: false,
 		lang: config.language,
 		decimalSymbol: ".",
 		showHumidity: false,
@@ -125,7 +127,21 @@ Module.register("currentweather",{
 		small.appendChild(windIcon);
 
 		var windSpeed = document.createElement("span");
-		windSpeed.innerHTML = " " + this.windSpeed;
+
+		var windSpeedUnit = "";
+		if(this.config.showWindspeedUnit) {
+			if (this.config.useBeaufort){
+				windSpeedUnit = "BFT";
+			} else if (this.config.useKMPHwind) {
+				windSpeedUnit = "kph";
+			} else if (this.config.useKnotswind) {
+				windSpeedUnit = "kt";
+			} else {
+				windSpeedUnit = "m/s";
+			}
+		}
+
+		windSpeed.innerHTML = " " + this.windSpeed + windSpeedUnit;
 		small.appendChild(windSpeed);
 
 		if (this.config.showWindDirection) {
@@ -386,6 +402,8 @@ Module.register("currentweather",{
 			this.windSpeed = this.ms2Beaufort(this.roundValue(data.wind.speed));
 		} else if (this.config.useKMPHwind) {
 			this.windSpeed = parseFloat((data.wind.speed * 60 * 60) / 1000).toFixed(0);
+		} else if (this.config.useKnotswind) {
+			this.windSpeed = parseFloat(data.wind.speed * 1.94384).toFixed(0);
 		} else {
 			this.windSpeed = parseFloat(data.wind.speed).toFixed(0);
 		}
