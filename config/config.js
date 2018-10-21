@@ -124,7 +124,8 @@ var config = {
         showHumidity: true,
         colored: true,
         tableClass: "large",
-        maxNumberOfDays: 5
+        maxNumberOfDays: 5,
+        showRainAmount: true
       }
     },
     {
