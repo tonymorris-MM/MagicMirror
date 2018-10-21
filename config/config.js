@@ -116,7 +116,7 @@ var config = {
         appid: "66f3367f71ee24f8016100dfdf124802",
         units: "metric",
         degreeLabel: true,
-        updateInterval: 3600000,
+        updateInterval: 360000,
         showHumidity: true,
         showWindDirection: true,
         showWindDirectionAsArrow: true,
