@@ -58,9 +58,13 @@ var config = {
 			module: "currentweather",
 			position: "top_right",
 			config: {
-				location: "New York",
-				locationID: "",  //ID from http://bulk.openweathermap.org/sample/; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				location: "Brisbane",
+				locationID: "2174003",  //ID from http://bulk.openweathermap.org/sample/; unzip the gz file and find your city
+				appid: "66f3367f71ee24f8016100dfdf124802",
+				units: "metric",
+				degreeLabel: true,
+				updateInterval: 3600000,
+				showHumidity: true
 			}
 		},
 		{
@@ -70,7 +74,14 @@ var config = {
 			config: {
 				location: "Brisbane",
 				locationID: "2174003",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "66f3367f71ee24f8016100dfdf124802"
+				appid: "66f3367f71ee24f8016100dfdf124802",
+				units: "metric",
+				degreeLabel: true,
+				updateInterval: 3600000,
+				showHumidity: true,
+				colored: true,
+				tableClass: "large",
+				maxNumberOfDays: 5
 			}
 		},
 		{
