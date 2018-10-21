@@ -154,7 +154,7 @@ var config = {
           },
           {
             title: "ABC",
-          , url: "https://www.abc.net.au/local/rss/all.xml"
+            url: "https://www.abc.net.au/local/rss/all.xml"
           },
           {
             title: "Al Jazeera",
