@@ -153,6 +153,10 @@ var config = {
             url: "http://www.sbs.com.au/news/topic/world/feed"
           },
           {
+            title: "ABC",
+          , url: "https://www.abc.net.au/local/rss/all.xml"
+          },
+          {
             title: "Al Jazeera",
             url: "https://www.aljazeera.com/xml/rss/all.xml"
           }
