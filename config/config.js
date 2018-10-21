@@ -119,6 +119,7 @@ var config = {
         updateInterval: 3600000,
         showHumidity: true,
         showWindDirection: true,
+        showWindDirectionAsArrow: true,
         showWindspeedUnit: true,
         useKnotswind: true,
         useKMPHwind: false,
