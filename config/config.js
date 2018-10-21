@@ -27,6 +27,15 @@ var config = {
 
   modules: [
     {
+      module: 'MMM-BackgroundSlideshow',
+      position: 'middle_center',
+      config: {
+        imagePaths: ['modules/MMM-BackgroundSlideshow/exampleImages/245709.jpg', 'MMM-BackgroundSlideshow/exampleImages/245742.jpg'],
+        transitionImages: true,
+        randomizeImageOrder: true
+      }
+    },
+    {
       module: "alert",
     },
     {
@@ -51,7 +60,7 @@ var config = {
       header: "Calendars",
       position: "bottom_right",
       config: {
-        maximumEntries: 25,
+        maximumEntries: 22,
         calendars: [
           // Tony Data61
           {
@@ -60,7 +69,7 @@ var config = {
           },
           // Tony Morris
           {
-            symbol: "calendar",
+            symbol: "fighter-jet",
             url: "https://calendar.google.com/calendar/ical/tonymorris%40gmail.com/private-6ad50d1b658fb70615cf01f3fd02b6ce/basic.ics"
           },
           // Amanda Ward
@@ -73,7 +82,13 @@ var config = {
           {
             symbol: "chess-rook",
             url: "https://calendar.google.com/calendar/ical/5ukd8ja9eel7f8kih1ta4ubvv0%40group.calendar.google.com/private-6d4aa5f446d5113b34790328901d25ff/basic.ics"
-          }
+          },
+          // Aviation Australia
+          {
+            symbol: "plane",
+            url: "https://calendar.google.com/calendar/ical/o8gfo4m0jcp3ja4h24guhbsod4%40group.calendar.google.com/private-d54037478e509637713b7e2ee4a704a0/basic.ics"
+          },
+
         ]
       }
     },
