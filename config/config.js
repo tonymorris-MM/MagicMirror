@@ -35,30 +35,47 @@ var config = {
     },
     {
       module: "clock",
-      position: "top_left",
+      position: "middle_center",
       config : {
-        dateFormat: "dddd, DD MMMM YYYY W",
+        dateFormat: "dddd, DD MMMM YYYY",
         displayType: "both",
-        analogSize: "200px",
+        analogSize: "380px",
+        analogFace: "face-010",
+        analogPlacement: "left",
+        secondsColor: "#888888",
         timezone: "Australia/Brisbane"
       }
     },
     {
       module: "calendar",
-      header: "US Holidays",
-      position: "top_left",
+      header: "Calendars",
+      position: "bottom_right",
       config: {
+        maximumEntries: 25,
         calendars: [
+          // Tony Data61
           {
-            symbol: "calendar-check-o ",
-            url: "webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics"
+            symbol: "cogs",
+            url: "https://calendar.google.com/calendar/ical/c2tlud7sg2ir0299546i4m8st0%40group.calendar.google.com/private-be2fdcf334104f6919a2e6b82135fdb2/basic.ics"
+          },
+          // Tony Morris
+          {
+            symbol: "calendar",
+            url: "https://calendar.google.com/calendar/ical/tonymorris%40gmail.com/private-6ad50d1b658fb70615cf01f3fd02b6ce/basic.ics"
+          },
+          // Amanda Ward
+          {
+            symbol: "heart",
+            url: "https://calendar.google.com/calendar/ical/amandaward1980%40gmail.com/private-8fdbff4171e49daf538991b3f1c621d0/basic.ics"
+
+          },
+          // The Gap Chess Club
+          {
+            symbol: "chess-rook",
+            url: "https://calendar.google.com/calendar/ical/5ukd8ja9eel7f8kih1ta4ubvv0%40group.calendar.google.com/private-6d4aa5f446d5113b34790328901d25ff/basic.ics"
           }
         ]
       }
-    },
-    {
-      module: "compliments",
-      position: "lower_third"
     },
     {
       module: "currentweather",
@@ -98,12 +115,9 @@ var config = {
           {
             title: "SBS World",
             url: "http://www.sbs.com.au/news/topic/world/feed"
-          },
-          {
-            title: "New York Times",
-            url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
           }
         ],
+        showDescription: true,
         showSourceTitle: true,
         showPublishDate: true
       }
