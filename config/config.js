@@ -170,6 +170,10 @@ var config = {
           {
             title: "Al Jazeera",
             url: "https://www.aljazeera.com/xml/rss/all.xml"
+          },
+          {
+            title: "This day in history",
+            url: "http://feeds.feedburner.com/day/MNbM?format=xml"
           }
         ],
         showDescription: true,
