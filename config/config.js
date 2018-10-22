@@ -164,10 +164,6 @@ var config = {
             url: "http://www.bom.gov.au/fwo/IDZ00063.warnings_land_qld.xml"
           },
           {
-            title: "BOM Climate",
-            url: "http://www.bom.gov.au/climate/rss/"
-          },
-          {
             title: "Al Jazeera",
             url: "https://www.aljazeera.com/xml/rss/all.xml"
           },
