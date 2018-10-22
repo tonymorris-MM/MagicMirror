@@ -111,9 +111,8 @@ var config = {
       module: "currentweather",
       position: "top_right",
       config: {
-        location: "North Ipswich",
-        // 7932658  North Ipswich -27.602859  152.761459  
-        locationID: "7932658",  //ID from http://bulk.openweathermap.org/sample/; unzip the gz file and find your city
+        location: "Redbank Plains",
+        locationID: "7932670",  //ID from http://bulk.openweathermap.org/sample/; unzip the gz file and find your city
         appid: "66f3367f71ee24f8016100dfdf124802",
         units: "metric",
         degreeLabel: true,
