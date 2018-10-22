@@ -61,6 +61,7 @@ var config = {
       position: "bottom_right",
       config: {
         maximumEntries: 20,
+        fade: false,
         calendars: [
           // Tony Data61
           {
