@@ -195,6 +195,17 @@ var config = {
         header: "METAR",
       }
     },
+    {
+      module: "MMM-lichess-daily",
+      disabled: false,
+      position: "top_left",
+      config: {
+        theme: "blue",
+        bg: "dark",
+        width: "246px",
+        height: "290px",
+      }
+    },
   ]
 
 };
