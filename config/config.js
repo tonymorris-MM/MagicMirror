@@ -131,8 +131,8 @@ var config = {
       position: "top_right",
       header: "Weather Forecast",
       config: {
-        location: "Brisbane",
-        locationID: "2174003",  //ID from http://www.openweathermap.org/help/city_list.txt
+        location: "Redbank Plains",
+        locationID: "7932670",  //ID from http://www.openweathermap.org/help/city_list.txt
         appid: "66f3367f71ee24f8016100dfdf124802",
         units: "metric",
         degreeLabel: true,
