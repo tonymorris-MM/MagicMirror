@@ -200,7 +200,7 @@ var config = {
       disabled: false,
       position: "top_left",
       config: {
-        theme: "blue",
+        theme: "blue3",
         bg: "dark",
         width: "246px",
         height: "290px",
