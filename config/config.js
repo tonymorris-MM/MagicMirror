@@ -60,7 +60,7 @@ var config = {
       header: "Calendars",
       position: "bottom_right",
       config: {
-        maximumEntries: 22,
+        maximumEntries: 20,
         calendars: [
           // Tony Data61
           {
