@@ -22,6 +22,7 @@ Module.register("currentweather",{
 		showPeriodUpper: false,
 		showWindDirection: true,
 		showWindDirectionAsArrow: false,
+		showWindDirectionCardinality: false,
 		showWindspeedUnit: false,
 		useBeaufort: true,
 		useKMPHwind: false,
@@ -117,7 +118,15 @@ Module.register("currentweather",{
 
 	// add extra information of current weather
 	// windDirection, humidity, sunrise and sunset
-	addExtraInfoWeather: function(wrapper) {
+	addExtraInfoWeather: function(wrapper) {		
+    function padZero(num, size) {
+      if(num == "")
+        return"";
+
+      var s = num+"";
+      while (s.length < size) s = "0" + s;
+      return s;
+    }
 
 		var small = document.createElement("div");
 		small.className = "normal medium";
@@ -126,6 +135,21 @@ Module.register("currentweather",{
 		windIcon.className = "wi wi-strong-wind dimmed";
 		small.appendChild(windIcon);
 
+		var windDirection = document.createElement("sup");
+		if (this.config.showWindDirection) {
+			windDirection.innerHTML = " " + this.translate(this.windDirection);
+		}
+		
+		if (this.config.showWindDirectionAsArrow && this.windDeg != null) {
+			windDirection.innerHTML += " &nbsp;<i class=\"fa fa-long-arrow-down\" style=\"transform:rotate("+this.windDeg+"deg);\"></i>&nbsp;";
+		}
+			
+		if(this.config.showWindDirectionCardinality && this.windDeg != null) {
+		  windDirection.innerHTML += " " + padZero(this.windDeg,3);
+		}
+			
+		small.appendChild(windDirection);
+		
 		var windSpeed = document.createElement("span");
 
 		var windSpeedUnit = "";
@@ -144,17 +168,6 @@ Module.register("currentweather",{
 		windSpeed.innerHTML = " " + this.windSpeed + windSpeedUnit;
 		small.appendChild(windSpeed);
 
-		if (this.config.showWindDirection) {
-			var windDirection = document.createElement("sup");
-			if (this.config.showWindDirectionAsArrow) {
-				if(this.windDeg !== null) {
-					windDirection.innerHTML = " &nbsp;<i class=\"fa fa-long-arrow-down\" style=\"transform:rotate("+this.windDeg+"deg);\"></i>&nbsp;";
-				}
-			} else {
-				windDirection.innerHTML = " " + this.translate(this.windDirection);
-			}
-			small.appendChild(windDirection);
-		}
 		var spacer = document.createElement("span");
 		spacer.innerHTML = "&nbsp;";
 		small.appendChild(spacer);

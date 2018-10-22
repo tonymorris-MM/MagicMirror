@@ -111,8 +111,9 @@ var config = {
       module: "currentweather",
       position: "top_right",
       config: {
-        location: "Brisbane",
-        locationID: "2174003",  //ID from http://bulk.openweathermap.org/sample/; unzip the gz file and find your city
+        location: "North Ipswich",
+        // 7932658  North Ipswich -27.602859  152.761459  
+        locationID: "7932658",  //ID from http://bulk.openweathermap.org/sample/; unzip the gz file and find your city
         appid: "66f3367f71ee24f8016100dfdf124802",
         units: "metric",
         degreeLabel: true,
@@ -120,6 +121,7 @@ var config = {
         showHumidity: true,
         showWindDirection: true,
         showWindDirectionAsArrow: true,
+        showWindDirectionCardinality: true,
         showWindspeedUnit: true,
         useKnotswind: true,
         useKMPHwind: false,
