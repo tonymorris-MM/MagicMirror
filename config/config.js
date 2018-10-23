@@ -53,6 +53,7 @@ var config = {
       config: {
         maximumEntries: 20,
         fade: false,
+        dateFormat: "DD MMM",
         calendars: [
           // Tony Data61
           {
@@ -90,6 +91,7 @@ var config = {
       position: "top_left",
       config: {
         maximumEntries: 8,
+        dateFormat: "DD MMM",
         calendars: [
           // Dinner
           {
