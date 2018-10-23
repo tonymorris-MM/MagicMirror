@@ -27,15 +27,6 @@ var config = {
 
   modules: [
     {
-      module: 'MMM-BackgroundSlideshow',
-      position: 'middle_center',
-      config: {
-        imagePaths: ['modules/MMM-BackgroundSlideshow/exampleImages/245709.jpg', 'MMM-BackgroundSlideshow/exampleImages/245742.jpg'],
-        transitionImages: true,
-        randomizeImageOrder: true
-      }
-    },
-    {
       module: "alert",
     },
     {
@@ -48,7 +39,7 @@ var config = {
       config : {
         dateFormat: "dddd, DD MMMM YYYY",
         displayType: "both",
-        analogSize: "380px",
+        analogSize: "250px",
         analogFace: "face-010",
         analogPlacement: "left",
         secondsColor: "#888888",
@@ -148,7 +139,7 @@ var config = {
     },
     {
       module: "newsfeed",
-      position: "bottom_bar",
+      position: "top_bar",
       config: {
         feeds: [
           {
@@ -204,6 +195,42 @@ var config = {
         bg: "dark",
         width: "246px",
         height: "290px",
+      }
+    },
+    {
+      module: 'MMM-Dad-Jokes',
+      position: 'bottom_bar', //Or wherever you want
+      config: {
+        updateInterval: 10000,
+      }
+    },
+    {
+      module: 'MMM-Parcel',
+      position: 'bottom_left',  // This can be any of the regions. Best results in left or right regions.
+      header: 'Parcels',   // This is optional
+      config: {
+        apiKey: 'c7fd14c3-8f25-429a-aaf5-0ebead79a1c0', // Your free API Key from aftership.com
+        maxNumber: 10, //maximum number of Parcels to show
+        showCourier: true,
+        autoHide: false, // hide module on mirror when there are no deliveries to be shown
+        isSorted: true,  // sort on delivery Status (most important ones first)
+        compactness: -1, // 0 = elaborate, 1 = compact display, 2 = very compact, one-liner per shipment, -1 = automatic
+        hideExpired: false, // don't show expired parcels
+        hideDelivered: 15, // Hide delivered parcels after 15 days. 
+        updateInterval: 600000, // 10 minutes = 10 * 60 * 1000 milliseconds. 
+        parcelStatusText: ["Exception", "Failed Attempt","In Delivery", "In Transit", 
+                           "Info Received", "Pending", "Delivered", "Expired"], // This is the default. Enter your own language text
+        parcelIconColor: ["red", "red", "green", "green", "cornflowerblue", "cornflowerblue", "grey", "grey"], // This is the default. Change for other icon colors
+        onlyDaysFormat: {
+          lastDay : '[Yesterday]',
+          sameDay : '[Today]',
+          nextDay : '[Tomorrow]',
+          lastWeek : '[Last] dddd',
+          nextWeek : 'dddd',
+          sameElse : 'L'
+        }, // formatting when only days are shown and time is unknown. 
+        expectedDeliveryText: 'Delivery Expected: ',   // This is the default. Changes time infoline. 
+        noParcelText: 'No Shipment Data'   // This is the default. Changes infoline in case of no trackings. 
       }
     },
   ]
