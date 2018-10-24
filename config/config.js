@@ -30,7 +30,7 @@ var config = {
       config : {
         dateFormat: "dddd, DD MMMM YYYY",
         displayType: "both",
-        analogSize: "320px",
+        analogSize: "260px",
         analogFace: "face-010",
         analogPlacement: "left",
         secondsColor: "#888888",
@@ -226,6 +226,13 @@ var config = {
         },
         expectedDeliveryText: 'Delivery Expected: ',
         noParcelText: 'No Shipment Data',
+      }
+    },
+    {
+      module: 'mmm-moon-phases',
+      header: 'Moon Phase',   // optionally you can add a header to this block
+      position: 'top_right',        // this can be any of the regions
+      config: {
       }
     },
   ]
