@@ -211,7 +211,7 @@ var config = {
         isSorted: true,
         compactness: 1, // 0 = elaborate, 1 = compact display, 2 = very compact, one-liner per shipment, -1 = automatic
         hideExpired: false,
-        hideDelivered: 3, // Hide delivered parcels after n days. 
+        hideDelivered: 2, // Hide delivered parcels after n days. 
         updateInterval: 600000,
         parcelStatusText: ["Exception", "Failed Attempt","In Delivery", "In Transit", 
                            "Info Received", "Pending", "Delivered", "Expired"], // This is the default. Enter your own language text
