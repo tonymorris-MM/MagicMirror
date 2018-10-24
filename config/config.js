@@ -209,7 +209,7 @@ var config = {
         showCourier: true,
         autoHide: false,
         isSorted: true,
-        compactness: 0, // 0 = elaborate, 1 = compact display, 2 = very compact, one-liner per shipment, -1 = automatic
+        compactness: 1, // 0 = elaborate, 1 = compact display, 2 = very compact, one-liner per shipment, -1 = automatic
         hideExpired: false,
         hideDelivered: 3, // Hide delivered parcels after n days. 
         updateInterval: 600000,
