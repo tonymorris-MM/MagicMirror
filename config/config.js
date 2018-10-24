@@ -9,18 +9,9 @@
  */
 
 var config = {
-  address: "0.0.0.0", // Address to listen on, can be:
-                        // - "localhost", "127.0.0.1", "::1" to listen on loopback interface
-                        // - another specific IPv4/6 to listen on a specific interface
-                        // - "", "0.0.0.0", "::" to listen on any interface
-                        // Default, when address config is left out, is "localhost"
+  address: "0.0.0.0",
   port: 8080,
-  ipWhitelist: [], // Set [] to allow all IP addresses
-                                                         // or add a specific IPv4 of 192.168.1.5 :
-                                                         // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.5"],
-                                                         // or IPv4 range of 192.168.3.0 --> 192.168.3.15 use CIDR format :
-                                                         // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.3.0/28"],
-
+  ipWhitelist: [],
   language: "en",
   timeFormat: 24,
   units: "metric",
@@ -39,7 +30,7 @@ var config = {
       config : {
         dateFormat: "dddd, DD MMMM YYYY",
         displayType: "both",
-        analogSize: "250px",
+        analogSize: "320px",
         analogFace: "face-010",
         analogPlacement: "left",
         secondsColor: "#888888",
@@ -96,7 +87,7 @@ var config = {
           // Dinner
           {
             symbol: "bell",
-            url: "https://calendar.google.com/calendar/ical/eavup2gqcdgeutlrc2ejgp5sfo%40group.calendar.google.com/private-93799c2500618f9dcd7d293da2d74763/basic.ics"
+            url: "https://calendar.google.com/calendar/ical/eavup2gqcdgeutlrc2ejgp5sfo%40group.calendar.google.com/private-93799c2500618f9dcd7d293da2d74763/basic.ics",
           },
         ]
       }
@@ -106,7 +97,7 @@ var config = {
       position: "top_right",
       config: {
         location: "Redbank Plains",
-        locationID: "7932670",  //ID from http://bulk.openweathermap.org/sample/; unzip the gz file and find your city
+        locationID: "7932670",  // https://web.archive.org/web/20180302040350/https://openweathermap.org/help/city_list.txt
         appid: "66f3367f71ee24f8016100dfdf124802",
         units: "metric",
         degreeLabel: true,
@@ -118,7 +109,7 @@ var config = {
         showWindspeedUnit: true,
         useKnotswind: true,
         useKMPHwind: false,
-        useBeaufort: false
+        useBeaufort: false,
       }
     },
     {
@@ -127,7 +118,7 @@ var config = {
       header: "Weather Forecast",
       config: {
         location: "Redbank Plains",
-        locationID: "7932670",  //ID from http://www.openweathermap.org/help/city_list.txt
+        locationID: "7932670",  // https://web.archive.org/web/20180302040350/https://openweathermap.org/help/city_list.txt
         appid: "66f3367f71ee24f8016100dfdf124802",
         units: "metric",
         degreeLabel: true,
@@ -136,7 +127,7 @@ var config = {
         colored: true,
         tableClass: "medium",
         maxNumberOfDays: 6,
-        showRainAmount: true
+        showRainAmount: true,
       }
     },
     {
@@ -175,17 +166,17 @@ var config = {
     {
       module: "MMM-PilotWX",
       disabled: false,
-      position: "bottom_left",         // for mode: "Static",  bottom_bar for mode: "Rotating",
+      position: "bottom_left",
       config: {
-        ICAO: "YBBN,YAMB,YBCG,YBOK,YBNA,YSTW", // list of INTL ICAO's
-        colorCode: "Standard", // Standard or Alternative
-        mode: "Static",           // Static (List) or Rotating (one by one)
-        sym: "/",                 // @ or / (Separator for Wind speed and direction)
-        tempUnits: "C",      // C or F (F converted from C)
-        measure: "KM",            // SM or KM (KM converted from SM data)
-        time: "Local",            // Zulu or Local (observation time)
-        maxWidth: "100%",         // 100% for mode: Rotating, approx 300px for mode: Static
-        useAltHeader: true,   // Use alternative header
+        ICAO: "YBBN,YAMB,YBCG,YBOK,YBNA,YSTW",
+        colorCode: "Standard",
+        mode: "Static",
+        sym: "/",
+        tempUnits: "C",
+        measure: "KM",
+        time: "Local",
+        maxWidth: "100%",
+        useAltHeader: true,
         useHeader: true,
         header: "METAR",
       }
@@ -203,25 +194,25 @@ var config = {
     },
     {
       module: 'MMM-Dad-Jokes',
-      position: 'bottom_bar', //Or wherever you want
+      position: 'bottom_bar',
       config: {
         updateInterval: 15000,
       }
     },
     {
       module: 'MMM-Parcel',
-      position: 'bottom_left',  // This can be any of the regions. Best results in left or right regions.
-      header: 'Parcels',   // This is optional
+      position: 'bottom_left',
+      header: 'Parcels',
       config: {
-        apiKey: 'c7fd14c3-8f25-429a-aaf5-0ebead79a1c0', // Your free API Key from aftership.com
-        maxNumber: 10, //maximum number of Parcels to show
+        apiKey: 'c7fd14c3-8f25-429a-aaf5-0ebead79a1c0',
+        maxNumber: 10,
         showCourier: true,
-        autoHide: false, // hide module on mirror when there are no deliveries to be shown
-        isSorted: true,  // sort on delivery Status (most important ones first)
-        compactness: -1, // 0 = elaborate, 1 = compact display, 2 = very compact, one-liner per shipment, -1 = automatic
-        hideExpired: false, // don't show expired parcels
-        hideDelivered: 15, // Hide delivered parcels after 15 days. 
-        updateInterval: 600000, // 10 minutes = 10 * 60 * 1000 milliseconds. 
+        autoHide: false,
+        isSorted: true,
+        compactness: 0, // 0 = elaborate, 1 = compact display, 2 = very compact, one-liner per shipment, -1 = automatic
+        hideExpired: false,
+        hideDelivered: 3, // Hide delivered parcels after n days. 
+        updateInterval: 600000,
         parcelStatusText: ["Exception", "Failed Attempt","In Delivery", "In Transit", 
                            "Info Received", "Pending", "Delivered", "Expired"], // This is the default. Enter your own language text
         parcelIconColor: ["red", "red", "green", "green", "cornflowerblue", "cornflowerblue", "grey", "grey"], // This is the default. Change for other icon colors
@@ -232,9 +223,9 @@ var config = {
           lastWeek : '[Last] dddd',
           nextWeek : 'dddd',
           sameElse : 'L'
-        }, // formatting when only days are shown and time is unknown. 
-        expectedDeliveryText: 'Delivery Expected: ',   // This is the default. Changes time infoline. 
-        noParcelText: 'No Shipment Data'   // This is the default. Changes infoline in case of no trackings. 
+        },
+        expectedDeliveryText: 'Delivery Expected: ',
+        noParcelText: 'No Shipment Data',
       }
     },
   ]
