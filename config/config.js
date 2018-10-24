@@ -165,9 +165,11 @@ var config = {
             url: "http://feeds.feedburner.com/day/MNbM?format=xml"
           }
         ],
-        showDescription: true,
+        showDescription: false,
         showSourceTitle: true,
-        showPublishDate: true
+        showPublishDate: true,
+        wrapTitle: false,
+        wrapDescription: false,
       }
     },
     {
@@ -203,7 +205,7 @@ var config = {
       module: 'MMM-Dad-Jokes',
       position: 'bottom_bar', //Or wherever you want
       config: {
-        updateInterval: 10000,
+        updateInterval: 15000,
       }
     },
     {
