@@ -78,7 +78,7 @@ var config = {
     },
     {
       module: "calendar",
-      header: "Dinner",
+      header: "Dinner & Jobs",
       position: "top_left",
       config: {
         maximumEntries: 8,
@@ -88,6 +88,10 @@ var config = {
           {
             symbol: "bell",
             url: "https://calendar.google.com/calendar/ical/eavup2gqcdgeutlrc2ejgp5sfo%40group.calendar.google.com/private-93799c2500618f9dcd7d293da2d74763/basic.ics",
+          },
+          {
+            symbol: "cogs",
+            url: "https://calendar.google.com/calendar/ical/q4ptemmluobdl6i1p5mc1vpbec%40group.calendar.google.com/private-989b90076b258e947ceae3e8453ba0a7/basic.ics",
           },
         ]
       }
