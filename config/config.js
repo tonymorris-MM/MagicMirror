@@ -67,10 +67,10 @@ var config = {
             symbol: "chess-rook",
             url: "https://calendar.google.com/calendar/ical/5ukd8ja9eel7f8kih1ta4ubvv0%40group.calendar.google.com/private-6d4aa5f446d5113b34790328901d25ff/basic.ics"
           },
-          // Aviation Australia
+          // AirServices Document Amendment
           {
             symbol: "plane",
-            url: "https://calendar.google.com/calendar/ical/o8gfo4m0jcp3ja4h24guhbsod4%40group.calendar.google.com/private-d54037478e509637713b7e2ee4a704a0/basic.ics"
+            url: "https://raw.githubusercontent.com/aviation-tmorris/calendar/master/airservices-document-amendment.ics"
           },
 
         ]
