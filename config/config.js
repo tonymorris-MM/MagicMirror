@@ -38,6 +38,26 @@ var config = {
       }
     },
     {
+      module: "worldclock",
+      position: "top_left", 
+      config: {
+        timeFormat: "HH:mm", //defined in moment.js
+        style: "top", //predefined 4 styles; 'top', 'left','right','bottom'
+        clocks: [
+          {
+            title: "Bangalore",
+            timezone: "Asia/Kolkata",
+            flag: "in"
+          },
+          {
+            title: "Kuala Lumpur",
+            timezone: "Asia/Kuala_Lumpur",
+            flag: "my"
+          },
+        ]
+      }
+    },
+    {
       module: "calendar",
       header: "Calendars",
       position: "bottom_right",
