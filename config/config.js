@@ -188,6 +188,12 @@ var config = {
       }
     },
     {
+      module: 'MMM-moonphases.co.uk',
+      position: 'top_center',        // this can be any of the regions
+      config: {
+      }
+    },
+    {
       module: "MMM-PilotWX",
       disabled: false,
       position: "bottom_left",
@@ -250,12 +256,6 @@ var config = {
         },
         expectedDeliveryText: 'Delivery Expected: ',
         noParcelText: 'No Shipment Data',
-      }
-    },
-    {
-      module: 'mmm-moon-phases',
-      position: 'top_right',        // this can be any of the regions
-      config: {
       }
     },
   ]
