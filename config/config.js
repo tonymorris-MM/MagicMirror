@@ -54,6 +54,11 @@ var config = {
             timezone: "Asia/Kuala_Lumpur",
             flag: "my"
           },
+          {
+            title: "Colorado",
+            timezone: "US/Mountain",
+            flag: "us"
+          },
         ]
       }
     },
