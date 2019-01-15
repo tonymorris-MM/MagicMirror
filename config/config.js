@@ -98,6 +98,11 @@ var config = {
             url: "https://raw.githubusercontent.com/aviation-tmorris/calendar/master/airservices-document-amendment.ics"
           },
 
+          // BFPG
+          {
+            symbol: "bandcamp",
+            url: "https://www.meetup.com/Brisbane-Functional-Programming-Group/events/ical/"
+          },
         ]
       }
     },
