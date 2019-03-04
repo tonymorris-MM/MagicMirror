@@ -67,7 +67,7 @@ var config = {
       header: "Calendars",
       position: "bottom_right",
       config: {
-        maximumEntries: 20,
+        maximumEntries: 25,
         fade: false,
         dateFormat: "DD MMM",
         calendars: [
