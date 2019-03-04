@@ -97,11 +97,15 @@ var config = {
             symbol: "plane",
             url: "https://raw.githubusercontent.com/aviation-tmorris/calendar/master/airservices-document-amendment.ics"
           },
-
           // BFPG
           {
             symbol: "bandcamp",
             url: "https://www.meetup.com/Brisbane-Functional-Programming-Group/events/ical/"
+          },
+          // Joshua Uni
+          {
+            symbol: "university",
+            url: "https://calendar.google.com/calendar/embed?src=4gnaln8tts00j7dv3g5pf0bulo%40group.calendar.google.com&ctz=Australia%2FBrisbane"
           },
         ]
       }
