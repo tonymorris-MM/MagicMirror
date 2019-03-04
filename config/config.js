@@ -105,7 +105,7 @@ var config = {
           // Joshua Uni
           {
             symbol: "university",
-            url: "https://calendar.google.com/calendar/embed?src=4gnaln8tts00j7dv3g5pf0bulo%40group.calendar.google.com&ctz=Australia%2FBrisbane"
+            url: "https://calendar.google.com/calendar/ical/4gnaln8tts00j7dv3g5pf0bulo%40group.calendar.google.com/private-fa6608e59c4d40e86acc09948e164246/basic.ics"
           },
         ]
       }
