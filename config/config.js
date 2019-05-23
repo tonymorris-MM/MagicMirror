@@ -90,7 +90,7 @@ var config = {
           // The Gap Chess Club
           {
             symbol: "chess-rook",
-            url: "https://calendar.google.com/calendar/ical/5ukd8ja9eel7f8kih1ta4ubvv0%40group.calendar.google.com/private-6d4aa5f446d5113b34790328901d25ff/basic.ics"
+            url: "http://schedule.thegapchessclub.org.au/the-gap-chess-club-schedule.ics"
           },
           // AirServices Document Amendment
           {
