@@ -55,8 +55,8 @@ var config = {
             flag: "my"
           },
           {
-            title: "Colorado",
-            timezone: "US/Mountain",
+            title: "New York",
+            timezone: "America/New_York",
             flag: "us"
           },
         ]
