@@ -81,6 +81,11 @@ var config = {
             symbol: "fighter-jet",
             url: "https://calendar.google.com/calendar/ical/tonymorris%40gmail.com/private-6ad50d1b658fb70615cf01f3fd02b6ce/basic.ics"
           },
+          // Tony Morris (aviation)
+          {
+            symbol: "fighter-jet",
+            url: "https://calendar.google.com/calendar/ical/1aespjvselea59egih69ps1g1g%40group.calendar.google.com/private-ca152fa8344d057e1455fd9cf594879b/basic.ics"
+          },
           // Amanda Ward
           {
             symbol: "heart",
