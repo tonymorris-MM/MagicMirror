@@ -117,20 +117,20 @@ var config = {
     },
     {
       module: "calendar",
-      header: "Dinner & Jobs",
+      header: "Jobs",
       position: "top_left",
       config: {
         maximumEntries: 8,
         dateFormat: "DD MMM",
         calendars: [
-          // Dinner
+          // Jobs
           {
             symbol: "bell",
-            url: "https://calendar.google.com/calendar/ical/eavup2gqcdgeutlrc2ejgp5sfo%40group.calendar.google.com/private-93799c2500618f9dcd7d293da2d74763/basic.ics",
+            url: "https://calendar.google.com/calendar/ical/ppt3mpul61lj1gsr6o4dgdrlrc%40group.calendar.google.com/private-aa1aa011506e1812860a05636465a8de/basic.ics",
           },
           {
             symbol: "cogs",
-            url: "https://calendar.google.com/calendar/ical/q4ptemmluobdl6i1p5mc1vpbec%40group.calendar.google.com/private-989b90076b258e947ceae3e8453ba0a7/basic.ics",
+            url: "https://calendar.google.com/calendar/ical/s9m7643tav7i3khk0606ddjelc%40group.calendar.google.com/private-60009055fb4c86834d7473811d80d15b/basic.ics",
           },
         ]
       }
