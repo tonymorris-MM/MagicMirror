@@ -50,11 +50,6 @@ var config = {
             flag: "in"
           },
           {
-            title: "Kuala Lumpur",
-            timezone: "Asia/Kuala_Lumpur",
-            flag: "my"
-          },
-          {
             title: "New York",
             timezone: "America/New_York",
             flag: "us"
@@ -118,9 +113,9 @@ var config = {
     {
       module: "calendar",
       header: "Jobs",
-      position: "top_left",
+      position: "bottom_left",
       config: {
-        maximumEntries: 8,
+        maximumEntries: 5,
         dateFormat: "DD MMM",
         calendars: [
           // Jobs
